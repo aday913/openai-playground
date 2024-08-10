@@ -1,0 +1,20 @@
+{
+    "type": "function",
+    "function": {
+        "name": "get_concert_info",
+        "strict": true,
+        "description": "Get information about upcoming concerts given a user's name. Call this whenever a user wants to know more about concerts coming up, given their user name. For example if a user asks 'What's my next concert?'",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "user_name": {
+                    "type": "string",
+                    "description": "The user's name in lowercase with no spaces."
+                }
+            },
+            "required": ["user_name"],
+            "additionalProperties": false
+        }
+    }
+}
+
